@@ -41,18 +41,18 @@ const sidebars = {
         'integrations/pytest',
       ],
     },
-    {
-      type: 'category',
-      label: 'Advanced',
-      collapsed: true,
-      link: {
-        type: 'generated-index',
-        slug: 'advanced',
-      },
-      items: [
-        'advanced/custom-types',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Advanced',
+    //   collapsed: true,
+    //   link: {
+    //     type: 'generated-index',
+    //     slug: 'advanced',
+    //   },
+    //   items: [
+    //     'advanced/custom-types',
+    //   ],
+    // },
   ],
 
 };

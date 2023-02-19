@@ -44,3 +44,9 @@ assert validate_or_fail(UserSchema, {
 ```
 
 This will raise a `valera.ValidationException` with detailed error messages explaining why the validation failed.
+
+:::info
+
+The [integrations chapter](/docs/integrations) contains a list of all available integrations
+
+:::

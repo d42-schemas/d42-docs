@@ -33,6 +33,12 @@ print(UserSchema)
 
 This defines a schema for a user with an integer `id` greater than or equal to 1, a string `username` with length between 1 and 8 characters, and a boolean `is_deleted`.
 
+:::info
+
+The [types chapter](/docs/types) contains a list of all available data types
+
+:::
+
 #### Creating Schemas from Native Types
 
 The `district42` package provides a way to create a schema from a native Python object. This can be useful for creating schemas on the fly based on existing data.
