@@ -39,6 +39,7 @@ const sidebars = {
         'integrations/vedro',
         'integrations/jj',
         'integrations/pytest',
+        'integrations/aiohttp',
       ],
     },
     // {

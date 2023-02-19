@@ -5,15 +5,19 @@ slug: pytest
 ---
 # pytest
 
+You can use [d42](https://pypi.org/project/d42/) ([valera](https://pypi.org/project/valera/)) as a validation tool for your [pytest](https://pypi.org/project/pytest/) tests.
+
 ## Installation
 
-### 1. Install package
+To install the package, use the following command:
 
 ```shell
-pip3 install d42
+$ pip3 install d42
 ```
 
-### 2. Register hook
+## Usage
+
+To use [d42](https://pypi.org/project/d42/) with [pytest](https://pypi.org/project/pytest/), you need to define a custom assertion message that uses the `validate` function from the [valera](https://pypi.org/project/valera/) package to validate the test result against the schema. To do this, create a `conftest.py` file in the root of your project and add the following code:
 
 ```python
 # ./conftest.py
@@ -29,7 +33,7 @@ def pytest_assertrepr_compare(op, left, right):
         return ["valera.ValidationException"] + errors
 ```
 
-## Usage
+Next, in your test file, define the test scenario and its steps, as shown in the example below:
 
 ```python
 from base64 import b64decode
@@ -48,11 +52,17 @@ def test_b64decode():
     })
 ```
 
+In this example, the test scenario decodes a base64 encoded string and validates that the result matches the expected output defined in the schema.
+
 ### Run tests
+
+To run the tests, use the following command:
 
 ```shell
 $ pytest tests/
 ```
+
+If the tests fail, a `ValidationException` will be raised, indicating which validation rule was not met. For example:
 
 ```shell
 E    AssertionError: assert valera.ValidationException

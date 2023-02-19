@@ -5,19 +5,21 @@ slug: jj
 ---
 # jj
 
+The [jj-district42](https://pypi.org/project/jj-district42/) package allows you to use d42 schemas with [jj](https://pypi.org/project/jj/) mock.
+
 ## Installation
+
+To install the package, use the following command:
 
 ```shell
 $ pip3 install jj-district42
 ```
 
-Documentation — https://pypi.org/project/jj-district42/
-
 ## Usage
 
 ### Server Side
 
-Start remote mock:
+First you need to start the remote mock server. To do this, run the following command:
 
 ```shell
 $ docker run -p 8080:80 nikitanovosibirsk/jj
@@ -25,20 +27,24 @@ $ docker run -p 8080:80 nikitanovosibirsk/jj
 
 ### Client Side
 
+Then you can use `jj-district42` to define the schema for the response and validate it against the actual response.
+
 ```python
 import jj
 import httpx
 from jj.mock import mocked
 from jj_district42 import HistorySchema
-from valera import validate_or_fail
+from d42 import validate_or_fail
 
-
+# Define the matcher and the response for the request
 matcher = jj.match("GET", "/users")
 response = jj.Response(status=200, json=[])
 
+# Use the `mocked` context manager to capture the request and response data
 with mocked(matcher, response) as mock:
     resp = httpx.get("http://localhost:8080/users", params={"user_id": 1})
 
+# Validate the mock history against the schema
 assert validate_or_fail(
     HistorySchema % [
         {
@@ -53,4 +59,10 @@ assert validate_or_fail(
 )
 ```
 
-More examples are available [here](https://github.com/tsv1/jj-district42/tree/master/examples)
+This code will validate the mock history against the `HistorySchema` and raise a `ValidationException` if the validation fails.
+
+:::info
+
+For more examples of using `jj-district42`, see the [examples directory](https://github.com/tsv1/jj-district42/tree/master/examples)
+
+:::info
