@@ -6,7 +6,7 @@ const config = {
   title: 'd42',
   tagline: 'Data description language for defining data models',
   url: 'https://d42.vedro.io',
-  baseUrl: process.env.DEV_MODE ? '/' : '/en/',
+  baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -91,7 +91,7 @@ const config = {
             items: [
               {
                 label: 'Discussions',
-                href: 'https://github.com/tsv1/district42/discussions',
+                href: 'https://github.com/tsv1/d42/discussions',
               },
             ],
           },
