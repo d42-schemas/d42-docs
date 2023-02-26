@@ -15,6 +15,18 @@ sch = schema.dict({
 })
 ```
 
+By default, only the keys specified in the dictionary are allowed in the dictionary. To allow other keys, use the ... syntax:
+
+```python
+from d42 import schema
+
+sch = schema.dict({
+    "id": schema.int.min(1),
+    "name": schema.str.len(1, ...),
+    ...: ...
+})
+```
+
   </TabItem>
 
   <TabItem value="generate">
