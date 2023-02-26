@@ -7,6 +7,8 @@ slug: scalar-types
 
 export const defaultTab = "declare";
 
+Scalar types represent a single value and cannot contain other types. They are used to define simple data types.
+
 ## None
 
 ### schema.none
