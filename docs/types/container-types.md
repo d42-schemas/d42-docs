@@ -24,3 +24,22 @@ import AnyValueType from '../_types/any/any_value.md';
 <AnyValueType />
 
 <br />
+
+
+## Dict
+
+### schema.dict
+
+import DictType from '../_types/dict/dict.md';
+
+<DictType />
+
+<br />
+
+### schema.dict(`keys`)
+
+import DictValueType from '../_types/dict/dict_value.md';
+
+<DictValueType />
+
+<br />
