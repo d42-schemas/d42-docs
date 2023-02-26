@@ -22,7 +22,7 @@ $ pip3 install jj-district42
 First you need to start the remote mock server. To do this, run the following command:
 
 ```shell
-$ docker run -p 8080:80 nikitanovosibirsk/jj
+$ docker run -p 8080:80 vedrouniverse/jj
 ```
 
 ### Client Side
