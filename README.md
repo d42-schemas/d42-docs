@@ -2,13 +2,15 @@
 
 Docs for [district42 ecosystem](https://github.com/topics/district42)
 
-### Installation
+## Development
+
+### Install
 
 ```
 $ yarn
 ```
 
-### Local Development
+### Start
 
 ```
 $ yarn start --port 3000

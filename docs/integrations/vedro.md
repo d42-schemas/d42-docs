@@ -98,6 +98,7 @@ Scenarios
  - Value [1m<[0m[1;95mclass[0m[39m [0m[32m'bytes'[0m[1m>[0m at _[1m[[0m[32m'result'[0m[1m][0m must be equal to [32mb'banana'[0m, but [32mb'cucumber'[0m given
  
  
+[38;5;249m# --seed 5ecd5919-ea2d-4a5c-b2d4-fc322167f2b4[0m[38;5;249m
 [0m[1;31m# 3 scenarios, 0 passed, 1 failed, 2 skipped[0m[34m (0.21s)[0m[34m
 [0m
 `}

@@ -7,7 +7,7 @@ slug: substitution
 
 [revolt](https://pypi.org/project/revolt/) is a package for substituting values based on district42 schemas. It provides a simple and flexible way to substitute values in complex data structures.
 
-#### Substituting Values
+### Substituting Values
 
 To substitute values, you need to define a schema using district42 and then call the `substitute` function from the `revolt` package with the schema and data as arguments.
 
@@ -44,7 +44,7 @@ print(substituted)
 
 This will substitute the values in the list of user objects based on the constraints defined in the UserListSchema. The resulting data structure will be a schema.list with schema.dict elements.
 
-#### Syntax Sugar
+### Syntax Sugar
 
 In addition to the `substitute` function, `revolt` provides a more concise syntax for substituting values using the `%` operator.
 

@@ -7,7 +7,7 @@ slug: validation
 
 [valera](https://pypi.org/project/valera/) is a package for validating data based on district42 schemas. It provides a simple and flexible way to validate data against a schema.
 
-#### Validating Data
+### Validating Data
 
 To validate data, you need to define a schema using district42 and then call the `validate_or_fail` function with the schema and data as arguments.
 

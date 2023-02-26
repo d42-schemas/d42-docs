@@ -23,9 +23,17 @@ const sidebars = {
       ],
     },
     {
-      type: 'doc',
-      id: 'types',
+      type: 'category',
       label: 'Types',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        slug: 'types',
+      },
+      items: [
+        'types/scalar-types',
+        'types/container-types',
+      ],
     },
     {
       type: 'category',
@@ -42,18 +50,6 @@ const sidebars = {
         'integrations/aiohttp',
       ],
     },
-    // {
-    //   type: 'category',
-    //   label: 'Advanced',
-    //   collapsed: true,
-    //   link: {
-    //     type: 'generated-index',
-    //     slug: 'advanced',
-    //   },
-    //   items: [
-    //     'advanced/custom-types',
-    //   ],
-    // },
   ],
 
 };
