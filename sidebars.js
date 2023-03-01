@@ -33,6 +33,7 @@ const sidebars = {
       items: [
         'types/scalar-types',
         'types/container-types',
+        'types/type-aliases',
       ],
     },
     {
