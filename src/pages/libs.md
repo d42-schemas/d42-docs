@@ -22,6 +22,7 @@ import { PluginList, Plugin } from '../components/PluginList';
     <Plugin name="vedro-valera-validator" pypi="vedro-valera-validator" desc="vedro + district42" />
     <Plugin name="aiohttp-valera-validator" pypi="aiohttp-valera-validator" desc="aiohttp + district42" />
     <Plugin name="jj-district42" pypi="jj-district42" desc="jj + district42" />
+    <Plugin name="schemax" pypi="schemax" desc="JSON Schema + district42" />
 </PluginList>
 
 [And more...](https://github.com/topics/district42)
