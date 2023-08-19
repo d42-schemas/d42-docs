@@ -3,6 +3,10 @@ import React from 'react';
 class UmamiAnalytics extends React.Component {
 
   componentDidMount() {
+    const devMode = ['localhost', '127.0.0.1'].includes(location.hostname);
+    if (devMode) {
+      return;
+    }
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.defer = true;
