@@ -5,7 +5,7 @@ slug: generation
 ---
 # Generation
 
-[blahblah](https://pypi.org/project/blahblah/) is a package for generating fake data based on district42`schemas. It provides a simple and flexible way to generate test data for your applications.
+[blahblah](https://pypi.org/project/blahblah/) is a package for generating fake data based on district42 schemas. It provides a simple and flexible way to generate test data for your applications.
 
 ### Generating Fake Data
 
