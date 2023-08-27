@@ -22,15 +22,13 @@ To use [d42](https://pypi.org/project/d42/) with [pytest](https://pypi.org/proje
 ```python
 # ./conftest.py
 from district42.types import Schema
-from valera import Formatter, validate
+from valera import format_result, validate
 
 
 def pytest_assertrepr_compare(op, left, right):
     if isinstance(right, Schema):
         result = validate(right, left)
-        formatter = Formatter()
-        errors = ["- " + e.format(formatter) for e in result.get_errors()]
-        return ["valera.ValidationException"] + errors
+        return format_result(result)
 ```
 
 Next, in your test file, define the test scenario and its steps, as shown in the example below:

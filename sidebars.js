@@ -34,6 +34,7 @@ const sidebars = {
         'types/scalar-types',
         'types/container-types',
         'types/type-aliases',
+        'types/custom-types',
       ],
     },
     {

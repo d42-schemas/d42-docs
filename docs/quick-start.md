@@ -5,7 +5,7 @@ slug: quick-start
 ---
 # Quick Start
 
-The d42 package provides several tools for defining, generating, validating, and substituting data based on data models defined using the district42 data description language.
+d42 package provides several tools for defining, generating, validating, and substituting data based on data models defined using the district42 data description language.
 
 ## Installation
 
