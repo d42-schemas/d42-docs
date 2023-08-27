@@ -105,7 +105,7 @@ class NumericSchema(CustomSchema[Props]):
     def __validate__(self, visitor: Validator, value: Any, path: PathHolder) -> ValidationResult:
         result = visitor.make_validation_result()
 
-        if not isinstance(value, str) or not value.isnumeric():
+        if not (isinstance(value, str) and all(x in "1234567890" for x in value)):
             result.add_error(TypeValidationError(path, value, "numeric str"))
 
         return result
@@ -124,3 +124,7 @@ print(validate_or_fail(schema_numeric, "abcd"))
 ```
 
 By following the steps above, you can create a robust custom type tailored to your specific needs.
+
+:::tip
+Full code is available [here](./numeric-custom-type.md)
+:::
