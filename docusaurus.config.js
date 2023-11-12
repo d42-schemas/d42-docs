@@ -91,7 +91,7 @@ const config = {
             items: [
               {
                 label: 'Discussions',
-                href: 'https://github.com/tsv1/d42/discussions',
+                href: 'https://github.com/orgs/d42-schemas/discussions',
               },
             ],
           },
@@ -100,7 +100,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/tsv1/d42',
+                href: 'https://github.com/d42-schemas/d42',
               },
               {
                 label: 'PyPi',
