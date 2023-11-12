@@ -1,6 +1,6 @@
 # d42 docs
 
-Docs for [district42 ecosystem](https://github.com/topics/district42)
+Docs for [d42 schemas](https://d42.vedro.io/)
 
 ## Development
 
