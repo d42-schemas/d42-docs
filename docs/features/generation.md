@@ -1,15 +1,14 @@
 ---
 id: generation
-title: Generation
 slug: generation
 ---
 # Generation
 
-[blahblah](https://pypi.org/project/blahblah/) is a package for generating fake data based on district42 schemas. It provides a simple and flexible way to generate test data for your applications.
+The `d42` package includes tools for generating fake data based on defined data schemas, offering a straightforward and flexible approach for creating test data for applications.
 
 ### Generating Fake Data
 
-To generate fake data, you need to define a schema using district42 and then call the `fake` function with the schema as an argument.
+To generate fake data, a schema is first defined using the data modeling capabilities of `d42`, followed by calling the `fake` function with the defined schema.
 
 ```python
 from d42 import schema, fake
@@ -26,4 +25,4 @@ print(user)
 # {'id': 7207320, 'username': 'ANk', 'is_deleted': False}
 ```
 
-This will generate a fake user object with an integer `id`, a string `username`, and a boolean `is_deleted`. The values will be generated randomly within the constraints defined by the schema.
+In this example, fake user data is generated, including an integer `id`, a string `username`, and a boolean `is_deleted`. The values are generated randomly, adhering to the constraints set by the schema.

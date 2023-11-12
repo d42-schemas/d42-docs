@@ -1,11 +1,10 @@
 ---
 id: quick-start
-title: Quick Start
 slug: quick-start
 ---
 # Quick Start
 
-d42 package provides several tools for defining, generating, validating, and substituting data based on data models defined using the district42 data description language.
+The `d42` package is a comprehensive toolkit for data modeling, which includes functionalities for definition, generation, validation, and substitution of data models using a robust data description language.
 
 ## Installation
 
@@ -15,15 +14,15 @@ $ pip3 install d42
 
 ## Components
 
-The [d42](https://pypi.org/project/d42/) package includes the following components:
-- [district42](https://pypi.org/project/district42/) — data description language for defining data models
-- [blahblah](https://pypi.org/project/blahblah/) — fake data generator for district42 schema
-- [valera](https://pypi.org/project/valera/) — validator for district42 schema
-- [revolt](https://pypi.org/project/revolt/) — value substitutor for district42 schema
+`d42` offers a full suite of tools essential for effective data modeling:
+- A data description language for defining data models.
+- Integrated capabilities for generating fake data.
+- Built-in validation tools for ensuring data model integrity.
+- Utilities for substituting values in data models.
 
 ## Usage
 
-Here's an example of declaring a schema for a string containing the word "banana":
+Here is an example of how to declare a schema for a string containing the word "banana":
 
 ```python
 from d42 import schema, fake, validate_or_fail
@@ -33,4 +32,4 @@ sch = schema.str("banana")
 assert validate_or_fail(sch, fake(sch))
 ```
 
-In this example, we declare a schema using the `schema.str` function with the string "banana" as an argument. We then use the `fake` function to generate a fake value based on the schema, and the `validate_or_fail` function to ensure that the generated value meets the requirements of the schema. The `assert` statement checks that the validation is successful, and raises an exception if it fails.
+In this example, a schema is declared using the `schema.str` function with "banana" as an argument. A fake value based on this schema is then generated using the `fake` function, and its validity is checked with `validate_or_fail`. The `assert` statement confirms the success of the validation, raising an exception if it fails.

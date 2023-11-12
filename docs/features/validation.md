@@ -1,15 +1,14 @@
 ---
 id: validation
-title: Validation
 slug: validation
 ---
 # Validation
 
-[valera](https://pypi.org/project/valera/) is a package for validating data based on district42 schemas. It provides a simple and flexible way to validate data against a schema.
+The `d42` package provides powerful features for validating data against defined schemas, ensuring data integrity and adherence to specified schema constraints.
 
 ### Validating Data
 
-To validate data, you need to define a schema using district42 and then call the `validate_or_fail` function with the schema and data as arguments.
+To perform validation, a schema must first be defined. Then, use the `validate_or_fail` function, supplying the schema and data as arguments.
 
 ```python
 from d42 import schema, validate_or_fail
@@ -27,9 +26,9 @@ assert validate_or_fail(UserSchema, {
 })
 ```
 
-This will validate the user against the `UserSchema`. If the validation passes, `validate_or_fail` will return True. If the validation fails, `validate_or_fail` will raise a `valera.ValidationException`.
+This code validates a user against `UserSchema`. If the user data meets the schema's criteria, `validate_or_fail` returns True. Otherwise, it raises an exception indicating validation failure.
 
-Here's an example of validating data that does not meet the constraints of the schema:
+Here's an example of validation failing due to data not meeting the schema constraints:
 
 ```python
 assert validate_or_fail(UserSchema, {
@@ -38,15 +37,15 @@ assert validate_or_fail(UserSchema, {
     "is_deleted": False,
 })
 
-# valera.ValidationException:
+# ValidationException:
 #   - Value <class 'int'> at _['id'] must be greater than or equal to 1, but 0 given
 #   - Value <class 'str'> at _['username'] must have at least 1 element, but it has 0 elements
 ```
 
-This will raise a `valera.ValidationException` with detailed error messages explaining why the validation failed.
+In this case, a `ValidationException` is raised, providing detailed error messages explaining why the validation failed.
 
 :::info
 
-The [integrations chapter](/docs/integrations) contains a list of all available integrations
+For further exploration of `d42`'s capabilities and how they integrate with other tools, the [integrations chapter](/docs/integrations) provides a comprehensive overview of all available integrations.
 
 :::

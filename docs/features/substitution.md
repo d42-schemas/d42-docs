@@ -1,21 +1,19 @@
 ---
 id: substitution
-title: Substitution
 slug: substitution
 ---
 # Substitution
 
-[revolt](https://pypi.org/project/revolt/) is a package for substituting values based on district42 schemas. It provides a simple and flexible way to substitute values in complex data structures.
+The `d42` package offers capabilities for substituting values in data structures based on defined schemas. This feature is designed to be simple and flexible, allowing for easy handling of complex data substitutions.
 
 ### Substituting Values
 
-To substitute values, you need to define a schema using district42 and then call the `substitute` function from the `revolt` package with the schema and data as arguments.
+To substitute values, define a schema using `d42`, and then apply the `substitute` function with both the schema and the data as arguments.
 
-Here's an example of substituting values for a list of user objects:
+Here's an example of substituting values in a list of user objects:
 
 ```python
-from d42 import schema
-from revolt import substitute
+from d42 import schema, substitute
 
 UserSchema = schema.dict({
     "id": schema.int,
@@ -42,13 +40,13 @@ print(substituted)
 # ])
 ```
 
-This will substitute the values in the list of user objects based on the constraints defined in the UserListSchema. The resulting data structure will be a schema.list with schema.dict elements.
+This code substitutes values in a user list based on the defined `UserListSchema`, resulting in a `schema.list` containing `schema.dict` elements.
 
 ### Syntax Sugar
 
-In addition to the `substitute` function, `revolt` provides a more concise syntax for substituting values using the `%` operator.
+`d42` also introduces a more concise syntax for value substitution, using the `%` operator. This operator is similar to [printf-style string formatting](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting) in Python, offering a familiar and readable way to substitute values.
 
-Here's an example of substituting values using the `%` operator:
+Example using the `%` operator:
 
 ```python
 from d42 import schema
@@ -65,4 +63,4 @@ UserListSchema % [
 ]
 ```
 
-This will substitute the values in the list of user objects using the `%` operator, which is similar to the [printf style string formatting in Python](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting).
+Using the `%` operator, values are substituted in the user list in a format reminiscent of printf-style string formatting, making the process both intuitive and efficient.
