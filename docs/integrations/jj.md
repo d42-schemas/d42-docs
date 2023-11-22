@@ -5,6 +5,9 @@ slug: jj
 ---
 # jj
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 The [jj-district42](https://pypi.org/project/jj-district42/) package allows you to use d42 schemas with [jj](https://pypi.org/project/jj/) mock.
 
 ## Installation
@@ -21,9 +24,22 @@ $ pip3 install jj-district42
 
 First you need to start the remote mock server. To do this, run the following command:
 
+<Tabs>
+  <TabItem value="Python">
+
+```shell
+$ python3 -m jj --port 8080
+```
+
+  </TabItem>
+    <TabItem value="Docker">
+
 ```shell
 $ docker run -p 8080:80 vedrouniverse/jj
 ```
+
+  </TabItem>
+</Tabs>
 
 ### Client Side
 
