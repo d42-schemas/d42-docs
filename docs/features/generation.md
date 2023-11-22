@@ -1,6 +1,5 @@
 ---
 id: generation
-slug: generation
 ---
 # Generation
 

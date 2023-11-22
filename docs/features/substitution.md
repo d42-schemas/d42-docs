@@ -1,6 +1,5 @@
 ---
 id: substitution
-slug: substitution
 ---
 # Substitution
 

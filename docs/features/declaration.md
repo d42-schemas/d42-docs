@@ -1,6 +1,5 @@
 ---
 id: declaration
-slug: declaration
 ---
 # Declaration
 

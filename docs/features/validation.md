@@ -1,6 +1,5 @@
 ---
 id: validation
-slug: validation
 ---
 # Validation
 
