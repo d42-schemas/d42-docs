@@ -1,7 +1,5 @@
 ---
 id: scalar-types
-title: Scalar Types
-slug: scalar-types
 ---
 # Scalar Types
 
@@ -163,5 +161,26 @@ New in version 1.4
 import BytesType from '../_types/bytes/bytes.md';
 
 <BytesType defaultTab={defaultTab} />
+
+<br />
+
+
+## Datetime
+
+:::note
+New in version 1.6
+:::
+
+### schema.datetime
+
+import DatetimeType from '../_types/datetime/datetime.md';
+
+<DatetimeType defaultTab={defaultTab} />
+
+### schema.datetime(`value`)
+
+import DatetimeValueType from '../_types/datetime/datetime_value.md';
+
+<DatetimeValueType defaultTab={defaultTab} />
 
 <br />
