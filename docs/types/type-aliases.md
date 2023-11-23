@@ -1,7 +1,5 @@
 ---
 id: type-aliases
-title: Type Aliases
-slug: type-aliases
 ---
 # Type Aliases
 

@@ -1,25 +1,22 @@
 ---
 id: numeric-custom-type
-title: Numeric Custom Type
-slug: numeric-custom-type
 ---
 
 # Numeric Custom Type
 
 ```python
 from typing import Any, Self
-from niltype import Nil
 
-from d42.custom_type import CustomSchema, Props, register_type
-from d42.custom_type import PathHolder, ValidationResult
+from d42.custom_type import CustomSchema, PathHolder, Props, ValidationResult, register_type
 from d42.custom_type.errors import TypeValidationError, ValueValidationError
 from d42.custom_type.utils import make_substitution_error
-from d42.custom_type.visitors import Representor, Generator, Validator, Substitutor
+from d42.custom_type.visitors import Generator, Representor, Substitutor, Validator
+from niltype import Nil, Nilable
 
 
 class NumericProps(Props):
     @property
-    def value(self) -> str:
+    def value(self) -> Nilable[str]:
         return self.get("value")
 
 
@@ -28,9 +25,9 @@ class NumericSchema(CustomSchema[NumericProps]):
         return self.__class__(self.props.update(value=value))
 
     def __represent__(self, visitor: Representor, indent: int = 0) -> str:
-        if self.props.value is Nil:
-            return f"{visitor.name}.numeric"
-        return f"{visitor.name}.numeric({self.props.value})"
+        if self.props.value is not Nil:
+            return f"{visitor.name}.numeric({self.props.value!r})"
+        return f"{visitor.name}.numeric"
 
     def __generate__(self, visitor: Generator) -> str:
         if self.props.value is not Nil:

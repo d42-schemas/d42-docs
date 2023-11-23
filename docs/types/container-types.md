@@ -1,7 +1,5 @@
 ---
 id: container-types
-title: Container Types
-slug: container types
 ---
 # Container Types
 

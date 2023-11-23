@@ -34,7 +34,23 @@ const sidebars = {
         'types/scalar-types',
         'types/container-types',
         'types/type-aliases',
-        'types/custom-types',
+        {
+          type: 'category',
+          label: 'Custom Types',
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              id: 'types/custom-types',
+              label: 'Part 1. Foundations',
+            },
+            {
+              type: 'doc',
+              id: 'types/custom-types-value-substitution',
+              label: 'Part 2. Value Substitution',
+            },
+          ]
+        }
       ],
     },
     {

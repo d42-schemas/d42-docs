@@ -1,14 +1,12 @@
 ---
 id: custom-types
-title: Custom Types
-slug: custom-types
 ---
 
-# Custom Types
+# Custom Types: Foundations
 
-Working with domain-specific data often requires extending beyond standard types. The d42 package provides an easy way to define custom types.
+Working with domain-specific data often requires extending beyond standard types. The [d42](https://pypi.org/project/d42/) package provides an easy way to define custom types.
 
-Consider an application that needs handle numeric strings, such as "1234". A unique type is required to ensure that these strings contain only numeric characters.
+Consider an application that needs handle numeric strings, such as `"1234"`. A unique type is required to ensure that these strings contain only numeric characters.
 
 ## Step 1: Define the Basic Custom Type
 
@@ -34,18 +32,20 @@ schema_numeric = register_type("numeric", NumericSchema)
 Now, the custom type is ready for use:
 
 ```python
-print(schema_numeric)  # <NumericSchema>
+print(schema_numeric)
+# Output:
+# <NumericSchema>
 ```
 
 This is a solid start, but it remains quite basic.
 
-## Step 2: Enhance Your Custom Type
+## Step 2: Enhance the Custom Type
 
-The d42 package provides options for enriching your custom type with additional functionalities.
+The d42 package provides options for enriching a custom type with additional functionalities.
 
 ### A. Improve the Representation
 
-Make your type fit better with other types like `schema.str` and `schema.int`.
+The special `__represent__` method is called when `repr(schema)` is used, providing a custom string representation of the schema.
 
 ```python
 from d42.custom_type.visitors import Representor
@@ -58,12 +58,14 @@ class NumericSchema(CustomSchema[Props]):
 Now, it'll look like this:
 
 ```python
-print(schema_numeric)  # schema.numeric
+print(schema_numeric) 
+# Output:
+# schema.numeric
 ```
 
 ### B. Add Random Generation
 
-You can generate random instances:
+The special `__generate__` method is invoked for creating random instances of the custom type.
 
 ```python
 from d42.custom_type.visitors import Generator
@@ -91,7 +93,7 @@ for _ in range(3):
 
 ### C. Implement Validation
 
-Data validation is crucial when working with custom types. This ensures that the data aligns with your specifications.
+The `__validate__` method is used to ensure that values conform to the custom type's specifications.
 
 ```python
 from typing import Any
@@ -111,20 +113,20 @@ class NumericSchema(CustomSchema[Props]):
         return result
 ```
 
-Now, you have the ability to perform value validation:
+Now, it's possible to perform value validation:
 
 ```python
 from d42 import validate_or_fail
-print(validate_or_fail(schema_numeric, "1234"))  # True
+print(validate_or_fail(schema_numeric, "1234"))
+# Output:
+# True
 
 print(validate_or_fail(schema_numeric, "abcd"))
-# Outputs:
+# Output:
 # valera.ValidationException:
 # - Value 'abcd' must be numeric str, but <class 'str'> given
 ```
 
-By following the steps above, you can create a robust custom type tailored to your specific needs.
+## Next Steps
 
-:::tip
-Full code is available [here](./numeric-custom-type.md)
-:::
+In the [next article](/docs/types/custom-types-value-substitution), the focus will be on value substitution for custom types, enhancing their functionality and usability in various scenarios.
