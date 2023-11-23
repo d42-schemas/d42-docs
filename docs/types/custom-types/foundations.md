@@ -1,5 +1,5 @@
 ---
-id: custom-types
+id: foundations
 ---
 
 # Custom Types: Foundations
@@ -129,4 +129,4 @@ print(validate_or_fail(schema_numeric, "abcd"))
 
 ## Next Steps
 
-In the [next article](/docs/types/custom-types-value-substitution), the focus will be on value substitution for custom types, enhancing their functionality and usability in various scenarios.
+In the [next article](/docs/types/custom-types/value-substitution), the focus will be on value substitution for custom types, enhancing their functionality and usability in various scenarios.

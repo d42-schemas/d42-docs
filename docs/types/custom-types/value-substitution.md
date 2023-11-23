@@ -1,10 +1,10 @@
 ---
-id: custom-types-value-substitution
+id: value-substitution
 ---
 
 # Custom Types: Value Substitution
 
-This article is a sequel to the [previous article](/docs/types/custom-types) and focuses on implementing value substitution for custom types.
+This article is a sequel to the [previous article](/docs/types/custom-types/foundations) and focuses on implementing value substitution for custom types.
 
 ### Step 1. Enhance Definitions
 

@@ -41,12 +41,12 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'types/custom-types',
+              id: 'types/custom-types/foundations',
               label: 'Part 1. Foundations',
             },
             {
               type: 'doc',
-              id: 'types/custom-types-value-substitution',
+              id: 'types/custom-types/value-substitution',
               label: 'Part 2. Value Substitution',
             },
           ]
