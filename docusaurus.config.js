@@ -43,21 +43,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    // https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-client-redirects
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            to: '/docs/types/custom-types/foundations',
-            from: ['/docs/types/custom-types'],
-          },
-        ],
-      },
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
