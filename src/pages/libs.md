@@ -18,10 +18,10 @@ Additionally, [district42-exp-types](https://pypi.org/project/district42-exp-typ
 ## Integrations
 
 <PluginList>
-    <Plugin name="vedro-valera-validator" pypi="vedro-valera-validator" desc="vedro + district42" />
-    <Plugin name="aiohttp-valera-validator" pypi="aiohttp-valera-validator" desc="aiohttp + district42" />
-    <Plugin name="jj-district42" pypi="jj-district42" desc="jj + district42" />
-    <Plugin name="schemax" pypi="schemax" desc="JSON Schema + district42" />
+    <Plugin name="vedro-valera-validator" pypi="vedro-valera-validator" desc="vedro + d42" />
+    <Plugin name="aiohttp-valera-validator" pypi="aiohttp-valera-validator" desc="aiohttp + d42" />
+    <Plugin name="jj-district42" pypi="jj-district42" desc="jj + d42" />
+    <Plugin name="schemax" pypi="schemax" desc="JSON Schema + d42" />
 </PluginList>
 
-Discover more on [GitHub](https://github.com/topics/district42)
+Discover more on [GitHub](https://github.com/topics/d42)

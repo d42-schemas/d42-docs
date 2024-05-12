@@ -26,3 +26,9 @@ import ListTypeType from '../../_types/list/list_type.md';
 <ListTypeType />
 
 <br />
+
+:::info
+
+The `schema.list` type also supports the `.len(length)` method, similar to the `schema.str.len(length)` [method](/docs/types/scalar-types#schemastrlenlength).
+
+:::

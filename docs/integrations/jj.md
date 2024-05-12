@@ -81,4 +81,4 @@ This code will validate the mock history against the `HistorySchema` and raise a
 
 For more examples of using `jj-district42`, see the [examples directory](https://github.com/tsv1/jj-district42/tree/master/examples)
 
-:::info
+:::
