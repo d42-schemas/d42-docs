@@ -71,7 +71,7 @@ assert sch % {"id": 1} == schema.dict({"id": schema.int(1)})
 
 The [from_native](/docs/features/declaration#creating-schemas-from-native-types) function is used to convert the Python objects to d42 types.
 
-:::note
+:::
 
   </TabItem>
 

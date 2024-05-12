@@ -1,11 +1,12 @@
-const lightCodeTheme = require('prism-react-renderer/themes/oceanicNext');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// @ts-check
+
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'd42',
   tagline: 'Data description language for defining data models',
-  url: 'https://d42.vedro.io',
+  url: 'https://d42.sh',
   baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
@@ -18,11 +19,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: './sidebars.js',
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
@@ -112,10 +113,10 @@ const config = {
         copyright: `Made in the middle of nowhere with ❤️<br/>© 2015-${new Date().getFullYear()}`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.oceanicNext,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config;

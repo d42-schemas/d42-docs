@@ -1,6 +1,6 @@
 # d42 docs
 
-Docs for [d42 schemas](https://d42.vedro.io/)
+Docs for [d42 schemas](https://pypi.org/project/d42/)
 
 ## Development
 

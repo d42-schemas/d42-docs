@@ -69,4 +69,4 @@ $ http /users
 
 For more information on the `aiohttp-valera-validator` package, see the [documentation](https://pypi.org/project/aiohttp-valera-validator/). For more information on `aiohttp`, see the [aiohttp documentation](https://docs.aiohttp.org/en/stable/).
 
-:::info
+:::

@@ -108,4 +108,4 @@ Scenarios
 
 For more information about Vedro framework, see the [documentation](https://vedro.io/).
 
-:::info
+:::
