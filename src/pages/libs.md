@@ -24,4 +24,4 @@ Additionally, [district42-exp-types](https://pypi.org/project/district42-exp-typ
     <Plugin name="schemax" pypi="schemax" desc="JSON Schema + d42" />
 </PluginList>
 
-Discover more on [GitHub](https://github.com/topics/d42)
+Discover more on [GitHub](https://github.com/topics/d42).

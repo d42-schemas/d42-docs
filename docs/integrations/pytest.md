@@ -5,7 +5,7 @@ slug: pytest
 ---
 # pytest
 
-You can use [d42](https://pypi.org/project/d42/) ([valera](https://pypi.org/project/valera/)) as a validation tool for your [pytest](https://pypi.org/project/pytest/) tests.
+You can use [d42](https://pypi.org/project/d42/) as a validation tool for your [pytest](https://pypi.org/project/pytest/) tests.
 
 ## Installation
 

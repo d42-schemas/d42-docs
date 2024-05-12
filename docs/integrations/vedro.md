@@ -5,7 +5,7 @@ slug: vedro
 ---
 # vedro
 
-The [vedro-valera-validator](https://pypi.org/project/vedro-valera-validator) package allows you to use [d42](https://pypi.org/project/d42/) ([valera](https://pypi.org/project/valera/)) as a validation tool for your [Vedro](https://pypi.org/project/vedro/) tests.
+The [vedro-valera-validator](https://pypi.org/project/vedro-valera-validator) package allows you to use [d42](https://pypi.org/project/d42/) as a validation tool for your [Vedro](https://pypi.org/project/vedro/) tests.
 
 ## Installation
 
@@ -68,7 +68,7 @@ class Scenario(vedro.Scenario):
 To run the tests, use the following command:
 
 ```shell
-$ vedro run -vv
+$ vedro run
 ```
 
 This will run the tests and output the results. If the tests fail, a ValidationException will be raised, indicating which validation rule was not met. For example:

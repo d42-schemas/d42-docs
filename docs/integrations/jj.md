@@ -8,7 +8,7 @@ slug: jj
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The [jj-district42](https://pypi.org/project/jj-district42/) package allows you to use d42 schemas with [jj](https://pypi.org/project/jj/) mock.
+The [jj-district42](https://pypi.org/project/jj-district42/) package allows you to use d42 schemas with [jj](https://jj-mock.io) mock.
 
 ## Installation
 

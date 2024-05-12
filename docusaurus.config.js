@@ -115,6 +115,7 @@ const config = {
       prism: {
         theme: prismThemes.oceanicNext,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['json', 'bash'],
       },
     }),
 };

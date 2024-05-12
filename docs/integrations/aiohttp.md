@@ -5,7 +5,7 @@ slug: aiohttp
 ---
 # aiohttp
 
-The [aiohttp-valera-validator](https://pypi.org/project/aiohttp-valera-validator/) package allows you to use [d42](https://pypi.org/project/d42/) ([valera](https://pypi.org/project/valera/)) as a validation tool for your [aiohttp](https://pypi.org/project/aiohttp/) web server.
+The [aiohttp-valera-validator](https://pypi.org/project/aiohttp-valera-validator/) package allows you to use [d42](https://pypi.org/project/d42/) as a validation tool for your [aiohttp](https://docs.aiohttp.org) web server.
 
 ## Installation
 
