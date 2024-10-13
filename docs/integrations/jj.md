@@ -8,14 +8,14 @@ slug: jj
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The [jj-district42](https://pypi.org/project/jj-district42/) package allows you to use d42 schemas with [jj](https://jj-mock.io) mock.
+The [jj-d42](https://pypi.org/project/jj-d42/) package allows you to use d42 schemas with [jj](https://jj-mock.io) mock.
 
 ## Installation
 
 To install the package, use the following command:
 
 ```shell
-$ pip3 install jj-district42
+$ pip3 install jj-d42
 ```
 
 ## Usage
@@ -43,13 +43,13 @@ $ docker run -p 8080:80 vedrouniverse/jj
 
 ### Client Side
 
-Then you can use `jj-district42` to define the schema for the response and validate it against the actual response.
+Then you can use `jj-d42` to define the schema for the response and validate it against the actual response.
 
 ```python
 import jj
 import httpx
 from jj.mock import mocked
-from jj_district42 import HistorySchema
+from jj_d42 import HistorySchema
 from d42 import validate_or_fail
 
 # Define the matcher and the response for the request
@@ -79,6 +79,6 @@ This code will validate the mock history against the `HistorySchema` and raise a
 
 :::info
 
-For more examples of using `jj-district42`, see the [examples directory](https://github.com/tsv1/jj-district42/tree/master/examples)
+For more examples of using `jj-d42`, see the [examples directory](https://github.com/tsv1/jj-d42/tree/master/examples)
 
 :::
