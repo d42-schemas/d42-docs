@@ -123,7 +123,7 @@ print(validate_or_fail(schema_numeric, "1234"))
 
 print(validate_or_fail(schema_numeric, "abcd"))
 # Output:
-# valera.ValidationException:
+# d42.ValidationException:
 # - Value 'abcd' must be numeric str, but <class 'str'> given
 ```
 

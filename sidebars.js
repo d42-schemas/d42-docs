@@ -56,6 +56,11 @@ const sidebars = {
       ],
     },
     {
+      type: 'doc',
+      id: 'migration-v1-to-v2',
+      label: 'Migration (v1 to v2)',
+    },
+    {
       type: 'category',
       label: 'Integrations',
       collapsed: true,
@@ -64,7 +69,6 @@ const sidebars = {
         slug: 'integrations',
       },
       items: [
-        'integrations/vedro',
         'integrations/jj',
         'integrations/pytest',
         'integrations/aiohttp',

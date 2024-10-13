@@ -17,12 +17,12 @@ $ pip3 install d42
 
 ## Usage
 
-To use [d42](https://pypi.org/project/d42/) with [pytest](https://pypi.org/project/pytest/), you need to define a custom assertion message that uses the `validate` function from the [valera](https://pypi.org/project/valera/) package to validate the test result against the schema. To do this, create a `conftest.py` file in the root of your project and add the following code:
+To use [d42](https://pypi.org/project/d42/) with [pytest](https://pypi.org/project/pytest/), you need to define a custom assertion message that uses the `validate` function to validate the test result against the schema. To do this, create a `conftest.py` file in the root of your project and add the following code:
 
 ```python
 # ./conftest.py
-from district42.types import Schema
-from valera import format_result, validate
+from d42.declaration import Schema
+from d42.validation import format_result, validate
 
 
 def pytest_assertrepr_compare(op, left, right):
@@ -63,6 +63,6 @@ $ pytest tests/
 If the tests fail, a `ValidationException` will be raised, indicating which validation rule was not met. For example:
 
 ```shell
-E    AssertionError: assert valera.ValidationException
+E    AssertionError: assert d42.ValidationException
 E      - Value <class 'bytes'> at _['result'] must be equal to b'banana', but b'cucumber' given
 ```

@@ -67,11 +67,6 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {
-            to: 'libs',
-            position: 'left',
-            label: 'Libs',
-          },
         ],
       },
       footer: {

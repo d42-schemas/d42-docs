@@ -126,7 +126,7 @@ print(validate_or_fail(sch, "1234"))
 
 print(validate_or_fail(sch, "5678"))
 # Output:
-# valera.ValidationException:
+# d42.ValidationException:
 # - Value <class 'str'> must be equal to '1234', but '5678' given
 ```
 
@@ -160,7 +160,7 @@ print(schema_numeric % "1234")
 
 print(schema_numeric("1234") % "5678")
 # Output:
-# revolt.errors.SubstitutionError:
+# d42.substitution.errors.SubstitutionError:
 # - Value <class 'str'> must be equal to '1234', but '5678' given
 ```
 

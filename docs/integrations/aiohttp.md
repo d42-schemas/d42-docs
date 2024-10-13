@@ -5,19 +5,19 @@ slug: aiohttp
 ---
 # aiohttp
 
-The [aiohttp-valera-validator](https://pypi.org/project/aiohttp-valera-validator/) package allows you to use [d42](https://pypi.org/project/d42/) as a validation tool for your [aiohttp](https://docs.aiohttp.org) web server.
+The [aiohttp-d42-validator](https://pypi.org/project/aiohttp-d42-validator/) package allows you to use [d42](https://pypi.org/project/d42/) as a validation tool for your [aiohttp](https://docs.aiohttp.org) web server.
 
 ## Installation
 
 To install the package, use the following command:
 
 ```shell
-$ pip3 install aiohttp-valera-validator
+$ pip3 install aiohttp-d42-validator
 ```
 
 ## Usage
 
-To use `aiohttp-valera-validator`, you need to define a schema for the request parameters using [d42](https://pypi.org/project/d42/). To do this, define a `ParamsSchema` schema:
+To use `aiohttp-d42-validator`, you need to define a schema for the request parameters using [d42](https://pypi.org/project/d42/). To do this, define a `ParamsSchema` schema:
 
 ```python
 from d42 import schema
@@ -29,11 +29,11 @@ ParamsSchema = schema.dict({
 
 In this example, the `ParamsSchema` schema defines a required parameter `q` that must be a string with at least one character.
 
-Then, use the` @validate` decorator from `aiohttp-valera-validator` to validate the request parameters against the schema, as shown in the example below:
+Then, use the` @validate` decorator from `aiohttp-d42-validator` to validate the request parameters against the schema, as shown in the example below:
 
 ```python
 from aiohttp.web import Application, json_response, route, run_app
-from aiohttp_valera_validator import validate
+from aiohttp_d42_validator import validate
 
 
 @validate(params=ParamsSchema)
@@ -67,6 +67,6 @@ $ http /users
 
 :::info
 
-For more information on the `aiohttp-valera-validator` package, see the [documentation](https://pypi.org/project/aiohttp-valera-validator/). For more information on `aiohttp`, see the [aiohttp documentation](https://docs.aiohttp.org/en/stable/).
+For more information on the `aiohttp-d42-validator` package, see the [documentation](https://pypi.org/project/aiohttp-d42-validator/). For more information on `aiohttp`, see the [aiohttp documentation](https://docs.aiohttp.org/en/stable/).
 
 :::
