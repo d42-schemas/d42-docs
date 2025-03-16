@@ -152,10 +152,6 @@ import StrRegexType from '../_types/str/str_regex.md';
 
 ## Bytes
 
-:::note
-New in version 1.4
-:::
-
 ### schema.bytes
 
 import BytesType from '../_types/bytes/bytes.md';
@@ -166,10 +162,6 @@ import BytesType from '../_types/bytes/bytes.md';
 
 
 ## Datetime
-
-:::note
-New in version 1.6
-:::
 
 ### schema.datetime
 

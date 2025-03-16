@@ -79,6 +79,6 @@ This code will validate the mock history against the `HistorySchema` and raise a
 
 :::info
 
-For more examples of using `jj-d42`, see the [examples directory](https://github.com/tsv1/jj-d42/tree/master/examples)
+For more examples of using `jj-d42`, see the [examples directory](https://github.com/jj-mock/jj-d42/tree/master/examples)
 
 :::
