@@ -35,7 +35,7 @@ $ python3 -m jj --port 8080
     <TabItem value="Docker">
 
 ```shell
-$ docker run -p 8080:80 vedrouniverse/jj
+$ docker run -p 8080:80 ghcr.io/jj-mock/jj
 ```
 
   </TabItem>
