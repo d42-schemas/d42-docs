@@ -1,6 +1,6 @@
 # d42 docs
 
-Docs for [d42 schemas](https://pypi.org/project/d42/)
+Docs for [d42](https://pypi.org/project/d42/) schemas.
 
 ## Development
 
