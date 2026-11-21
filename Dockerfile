@@ -9,7 +9,7 @@ RUN yarn --frozen-lockfile
 COPY . /app
 RUN yarn build
 
-FROM nginx:1.28.0-alpine3.21
+FROM nginx:1.30.7-alpine3.24
 
 COPY --from=builder /app/build /srv/public
 
